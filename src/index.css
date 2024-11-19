@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h3 {
+  color: #4caf50;
+  font-size: 1.8rem;
+}
+
+h4 {
+  margin-top: 20px;
+  color: #ff9800;
+  font-size: 1.5rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Transaction list styles */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+  background-color: #ff5722;
+  margin-left: 10px;
+}
+
+li button:hover {
+  background-color: #e64a19;
+}
+
+/* Edit Transaction */
+form {
+  margin-top: 20px;
+}
+
+form input,
+form button {
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3, h4 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.9rem;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
